@@ -10,7 +10,7 @@ pipeline{
             steps {
                 script {
                     sh 'docker build . -t my-app'
-                    ah 'docker rmi something'
+                    sh 'docker rmi something'
                     sh 'docker run -it -p 3000:3000 --name something my-app'
                 }
             }
