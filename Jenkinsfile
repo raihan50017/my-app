@@ -11,7 +11,7 @@ pipeline{
                 script {
                     sh 'docker build . -t my-app'
                     sh 'docker rm something'
-                    sh 'docker run -it -p 3000:3000 --name something my-app'
+                    sh 'docker run -d -p 3000:3000 --name something my-app'
                 }
             }
         }
