@@ -1,9 +1,9 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <>
-      <p>CI/CD pipeline successfully implemented</p>
+      <p className="bg-gray-100 text-center text-red-900">
+        CI/CD pipeline successfully implemented
+      </p>
     </>
   );
 }
