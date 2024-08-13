@@ -3,7 +3,7 @@ pipeline{
   stages {
     stage('Checkout GitHub repo') {
             steps {
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/raihan50017/my-app.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/raihan50017/next-portfolio.git']])
             }
         }
     stage('Build Docker Image and Container') {
