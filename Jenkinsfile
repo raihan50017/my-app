@@ -12,7 +12,7 @@ pipeline{
                     sh 'docker build . -t my-app'
                     sh 'docker stop something || true' 
                     sh 'docker rm something || true'
-                    sh 'docker run -d -p 8091:8091 --name something my-app'
+                    sh 'docker run -d -p 8091:3000 --name something my-app'
                 }
             }
         }
