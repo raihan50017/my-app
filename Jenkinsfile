@@ -9,10 +9,10 @@ pipeline{
     stage('Build Docker Image and Container') {
             steps {
                 script {
-                    sh 'docker build . -t my-app'
-                    sh 'docker stop something || true' 
-                    sh 'docker rm something || true'
-                    sh 'docker run -d -p 8091:3000 --name something my-app'
+                    sh 'docker build . -t khokon-portfolio'
+                    sh 'docker stop khokon || true' 
+                    sh 'docker rm khokon || true'
+                    sh 'docker run -d -p 8092:3000 --name khokon khokon-portfolio'
                 }
             }
         }
