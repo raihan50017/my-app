@@ -7,7 +7,7 @@ export default function Home() {
       <p className="bg-gray-100 text-center text-red-900 mt-3">
         Webhook Integrated!!!
       </p>
-      <h5 className="text-center">Made by Aburayhan</h5>
+      <h5 className="text-center">Made by Aburayhan(Zahid)</h5>
     </>
   );
 }
